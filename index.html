@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="wraper">
+        <p class="title">To do list:</p>
+        <section class="main">
+          <div class="input-area">
+            <input type="text" placeholder="Digite a tarefa" id="text-input" autofocus>
+            <button id="enter-btn" onclick="appendTarefa()">Enter</button>
+          </div>
+          <div class="progres-bar"></div>
+          <div class="check-area" id="check-area">
+          </div>
+          <div class="footer">
+            <div class="footer-line"></div>
+            <div class="footer-main">
+                <p class="itens">0 itens restantes</p>
+                <div class="filter-area">
+                    <button class="btn-black btn-2" onclick="changeFilter(2)">Tudo</button>
+                    <button class="btn btn-1" onclick="changeFilter(1)">Ativas</button>
+                    <button class="btn btn-0" onclick="changeFilter(0)">Completas</button>
+                </div>
+                <button class="btn" onclick="cleanList()">Limpar completas</button>
+            </div>
+          </div>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
